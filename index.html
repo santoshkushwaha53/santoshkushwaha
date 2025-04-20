@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Santosh Kushwaha | Software Specialist & Tech Enthusiast</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+	<style>
+    
+
+    .open-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .open-btn:hover {
+      background-color: #34495e;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      backdrop-filter: blur(6px);
+      background-color: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .popup-box {
+      background: white;
+      padding: 40px 30px;
+      max-width: 600px;
+      width: 90%;
+      border-radius: 20px;
+      text-align: left;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+      animation: popUp 0.5s ease;
+    }
+.popup-scroll {
+  overflow-y: auto;
+  max-height: 60vh;
+  padding-right: 10px;
+}
+    @keyframes popUp {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 auto 20px;
+      background-image: url('https://via.placeholder.com/100'); /* Replace with your photo */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .popup-box h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .popup-box p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .popup-box button {
+      margin-top: 20px;
+      background: #2c3e50;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .popup-box button:hover {
+      background: #34495e;
+    }
+    .download-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .download-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/manavguru/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://x.com/manavguru2000"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/Itconsultantguru/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://x.com/manavguru2000"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Santosh Kushwaha</h1>
+                <h6 class="header-mono" >Product Development | Cloud Expert| Full-Stack Developer </h6>
+              
+                <a href="../public_html/assets/imgs/Santosh_Resume.pdf" download="MyFile.pdf" class="btn btn-primary btn-rounded " target="_blank" ><i class="ti-printer pr-2"></i>Print Resume</a>
+
+            </div>
+        </div>
+    </header>
+    <!-- The Modal -->
+<div class="main-content">
+  
+</div>
+<!-- Popup window content-->
+<div class="overlay" id="introPopup">
+  <div class="popup-box">
+    <div class="profile-pic"></div>
+    <h2>Hello, I'm Santosh 👋</h2>
+    <p>
+      
+      A Software Specialist who gets a genuine thrill out of turning knotty problems into sleek, scalable solutions. Think of me as a digital architect, collaborating with the titans of tech – SAP, Oracle, and Microsoft Dynamics – to build bridges between systems and fine-tune business engines. My mission? To craft software that doesn't just work, but truly makes a difference.
+
+
+    </p>
+    <p>
+      While I'm deep in the world of product development and the cloud, I also believe that the best code is a team sport. Mentoring, sharing knowledge, and constantly leveling up are just as important to me as writing elegant algorithms.
+
+    </p>
+    <p>
+      Beyond the glow of the screen, you'll find me with my boots on a hiking trail, my nose in a travel guide, or lost in the pages of a captivating book. And at the heart of it all is my amazing family.
+
+    </p>
+    <p><strong>Explore my world, and let’s build something awesome together. ✨</strong></p>
+     <button onclick="document.getElementById('introPopup').style.display='none'">Let’s Go 🚀</button>
+  </div>
+
+  </div>
+</div>
+
+<div class="overlay" id="introPopup1">
+  <div class="popup-box">
+   
+   <h2 style="color: #007bff;">The Continuous Journey: Lifelong Learning for Developers</h2>
+    <div class="popup-scroll">
+    
+
+    <p style="margin-bottom: 15px;">In the fast-paced world of technology, yesterday’s cutting-edge becomes today’s baseline. For developers, staying relevant isn’t a one-time milestone — it’s a continuous journey. <strong style="font-weight: bold;">Lifelong learning</strong> is no longer optional; it's the key to staying ahead, remaining adaptable, and delivering value in every project.</p>
+
+    <p style="margin-bottom: 15px;">The first step is <strong style="font-weight: bold;">cultivating curiosity</strong>. The most successful developers are naturally inquisitive. They ask questions, explore new tools, and experiment outside their comfort zones. Whether it’s learning a new programming language, understanding DevOps pipelines, or exploring AI and machine learning, keeping an open mindset fuels consistent growth.</p>
+
+    <p style="margin-bottom: 15px;"><strong style="font-weight: bold;">Structure matters</strong> too. Set learning goals. Subscribe to newsletters, follow tech leaders on platforms like LinkedIn or GitHub, take part in webinars, and complete certifications. Short courses on platforms like Coursera, Pluralsight, or Microsoft Learn can introduce new concepts in digestible formats.</p>
+
+    <p style="margin-bottom: 15px;">But learning isn't just theoretical — <strong style="font-weight: bold;">build what you learn</strong>. Apply new knowledge in real-world projects, contribute to open-source, or develop internal tools that solve actual business challenges. The combination of theory and practice cements understanding and builds confidence.</p>
+
+    <p style="margin-bottom: 15px;">Equally important is the <strong style="font-weight: bold;">community</strong>. Join tech forums, developer communities, or attend meetups. Learning from peers exposes you to diverse perspectives, better practices, and new trends that you might miss on your own.</p>
+
+    <p style="margin-bottom: 15px;">Lastly, adopt the mindset that there’s <strong style="font-weight: bold;">no finish line</strong>. Technology will always evolve — and so should you. By treating learning as an ongoing habit rather than a catch-up sprint, you’ll not only future-proof your career but also enjoy the process of growth itself.</p>
+
+    <div style="margin-top: 30px; padding: 15px; background-color: #e9ecef; border-left: 5px solid #007bff; font-style: italic;">
+        <p style="margin-bottom: 15px;">In the ever-evolving tech landscape, your best asset isn’t just what you know — it’s how fast and how well you can learn.</p>
+    </div>
+
+   
+
+</div>
+     <button onclick="document.getElementById('introPopup1').style.display='none'">Let’s Go 🚀</button>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="overlay" id="introPopup2">
+  <div class="popup-box">
+   
+   <h2 style="color: #007bff;">Coding Through the Chaos: Maintaining a Healthy Life as a Busy Developer</h2>
+
+    <div class="popup-scroll">
+  
+        <p style="margin-bottom: 15px;">The glow of the monitor, the satisfying click of the keys, the elegant logic unfurling in your code – these are the hallmarks of a developer's world. But often, this world comes with a silent companion: long hours. While the dedication to your craft is admirable, consistently burning the midnight oil can take a toll on your physical and mental well-being.</p>
+    <p style="margin-bottom: 15px;">As developers, we are problem-solvers. So, let's tackle the challenge of maintaining a healthy life even when the deadlines loom large. Here are a few practical strategies to weave well-being into your demanding schedule:</p>
+    <h2 style="color: #007bff; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">1. The Power of Micro-Breaks</h2>
+    <p style="margin-bottom: 15px;">You might think you don't have time for breaks, but even short pauses can make a significant difference. Instead of pushing through fatigue, try the following:</p>
+    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">The 20-20-20 Rule:</strong> Every 20 minutes, look at something 20 feet away for 20 seconds. This helps reduce eye strain, a common ailment for those glued to screens.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Stand and Stretch:</strong> Set a timer for every hour to stand up, stretch your arms and legs, and walk around for a minute or two. This combats sedentary behavior and improves blood circulation.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Deep Breathing Exercises:</strong> A quick minute of deep, conscious breathing can lower stress levels and improve focus.</li>
+    </ul>
+    <h2 style="color: #007bff; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">2. Fueling Your Body, Not Just the Machine</h2>
+    <p style="margin-bottom: 15px;">Long hours often lead to quick, unhealthy food choices. Prioritizing nutritious meals and snacks can significantly impact your energy levels and overall health:</p>
+    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Plan Your Meals:</strong> If possible, plan your meals for the week. This reduces the temptation to grab fast food when you're tired and hungry.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Pack Healthy Snacks:</strong> Keep fruits, nuts, yogurt, or veggie sticks readily available to avoid energy crashes and unhealthy cravings.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Hydration is Key:</strong> Keep a water bottle at your desk and sip on it throughout the day. Dehydration can lead to fatigue and headaches.</li>
+    </ul>
+    <h2 style="color: #007bff; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">3. Making Movement a Non-Negotiable</h2>
+    <p style="margin-bottom: 15px;">Finding time for a full workout can be challenging, but incorporating physical activity in smaller chunks is achievable:</p>
+    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Morning Movement:</strong> Even 15-20 minutes of stretching, yoga, or a brisk walk before work can energize you for the day.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Lunchtime Activity:</strong> Use your lunch break for a walk outdoors or a quick workout if your workplace has facilities.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Active Commuting:</strong> If feasible, walk or cycle part of your commute.</li>
+    </ul>
+    <h2 style="color: #007bff; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">4. Prioritizing Sleep: Your Ultimate Debugger</h2>
+    <p style="margin-bottom: 15px;">Skimping on sleep might seem like a way to get more done, but it ultimately hinders productivity and impacts your health negatively.</p>
+    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Establish a Sleep Routine:</strong> Try to go to bed and wake up around the same time each day, even on weekends, to regulate your body's natural sleep-wake cycle.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Create a Relaxing Bedtime Ritual:</strong> Wind down before sleep with activities like reading, taking a warm bath, or listening to calming music.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Optimize Your Sleep Environment:</strong> Ensure your bedroom is dark, quiet, and cool.</li>
+    </ul>
+    <h2 style="color: #007bff; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">5. Boundaries and Balance</h2>
+    <p style="margin-bottom: 15px;">While passion drives your work, setting boundaries is crucial for long-term well-being.</p>
+    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Define Work Hours:</strong> Try to establish clear start and end times for your workday and stick to them as much as possible.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Learn to Say No:</strong> Don't overcommit yourself. It's okay to decline additional tasks if you're already feeling overwhelmed.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Disconnect and Recharge:</strong> Make time for activities outside of work that you enjoy and that help you relax and de-stress. This could be spending time with loved ones, pursuing hobbies, or simply unwinding.</li>
+    </ul>
+    <h2 style="color: #007bff; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">6. The Power of Connection</h2>
+    <p style="margin-bottom: 15px;">Don't isolate yourself in the coding cave. Maintaining social connections is vital for mental well-being.</p>
+    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Connect with Colleagues:</strong> Take short breaks to chat with your teammates.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Reach Out to Friends and Family:</strong> Make time for social interactions outside of work.</li>
+        <li style="margin-bottom: 8px;"><strong style="font-weight: bold;">Consider a Developer Community:</strong> Engaging with other developers can provide support and a sense of belonging.</li>
+    </ul>
+    <h2 style="color: #007bff; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">7. Listen to Your Body</h2>
+    <p style="margin-bottom: 15px;">Pay attention to the signals your body is sending you. Don't ignore persistent aches, fatigue, or changes in mood. Seek professional help if needed.</p>
+    <div style="margin-top: 30px; padding: 15px; background-color: #e9ecef; border-left: 5px solid #007bff; font-style: italic;">
+        <p style="margin-bottom: 15px;"><strong style="font-weight: bold;">The Takeaway:</strong> Maintaining a healthy life as a busy developer is not about achieving perfect balance every day. It's about making conscious choices and incorporating small, sustainable habits into your routine. By prioritizing your well-being, you'll not only feel better but also become a more focused, productive, and ultimately, a happier developer. Your code might be your passion, but your health is your foundation. Take care of it.</p>
+    </div></div>
+     <button onclick="document.getElementById('introPopup2').style.display='none'">Let’s Go 🚀</button>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="overlay" id="introPopup3">
+  <div class="popup-box">
+   
+    <h2>AI: The Developer's New Frontier - Challenge or Opportunity?</h2>
+    <div class="popup-scroll">
+   <p style="margin-bottom: 15px;">The rise of Artificial Intelligence (AI) has sparked a whirlwind of discussions across industries, and the development world is no exception. For developers, the emergence of sophisticated AI tools and the increasing demand for AI-powered applications present a pivotal moment. Is this a challenging disruption or a fertile ground of opportunity? The answer, like most things in the tech landscape, is nuanced and depends heavily on perspective and proactivity.</p>
+
+    <h2 style="color: #007bff; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">The Challenging Aspects of the AI Revolution for Developers:</h2>
+    <p style="margin-bottom: 15px;">Let's address the concerns first. The rapid advancements in AI can feel overwhelming, and some developers might perceive it as a threat to their existing skill sets and roles:</p>
+
+    <h3 style="color: #dc3545; margin-top: 20px; margin-bottom: 10px;">The Fear of Automation:</h3>
+    <p style="margin-bottom: 15px;">One of the most prominent challenges is the potential for AI to automate certain coding tasks. Tools that can generate code snippets, debug basic errors, or even build entire functionalities might lead some to fear job displacement. While widespread replacement is unlikely in the near future, developers will need to adapt to working alongside these AI assistants.</p>
+
+    <h3 style="color: #dc3545; margin-top: 20px; margin-bottom: 10px;">The Learning Curve:</h3>
+    <p style="margin-bottom: 15px;">AI is a vast and rapidly evolving field. Staying abreast of the latest advancements, understanding machine learning concepts, and learning to work with new AI-powered tools requires a significant investment of time and effort. This learning curve can feel steep, especially for developers already juggling tight deadlines and demanding projects.</p>
+
+    <h3 style="color: #dc3545; margin-top: 20px; margin-bottom: 10px;">The Need for New Skill Sets:</h3>
+    <p style="margin-bottom: 15px;">The demand for developers with AI-specific skills is soaring. This includes knowledge of machine learning algorithms, data science fundamentals, cloud AI platforms, and specialized programming languages like Python. Developers who haven't yet ventured into these areas might feel a gap in their skillset.</p>
+
+    <h3 style="color: #dc3545; margin-top: 20px; margin-bottom: 10px;">Integration Complexity:</h3>
+    <p style="margin-bottom: 15px;">Integrating AI functionalities into existing applications can be complex. It often involves working with APIs, handling large datasets, and understanding the intricacies of AI models. This can introduce new challenges in terms of architecture, testing, and deployment.</p>
+
+    <h3 style="color: #dc3545; margin-top: 20px; margin-bottom: 10px;">Ethical Considerations:</h3>
+    <p style="margin-bottom: 15px;">As developers build AI-powered applications, they must grapple with ethical considerations such as bias in algorithms, data privacy, and the potential societal impact of their creations. This adds a layer of responsibility that might not have been as prominent in traditional development.</p>
+
+    <h2 style="color: #28a745; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">The Abundant Opportunities AI Presents for Developers:</h2>
+    <p style="margin-bottom: 15px;">Despite the challenges, AI also unlocks a wealth of exciting opportunities for developers who are willing to embrace the change:</p>
+
+    <h3 style="color: #28a745; margin-top: 20px; margin-bottom: 10px;">Enhanced Productivity and Efficiency:</h3>
+    <p style="margin-bottom: 15px;">AI-powered tools can automate repetitive tasks, freeing up developers to focus on more complex and creative problem-solving. Code generation tools, intelligent code completion, and automated testing can significantly boost productivity.</p>
+
+    <h3 style="color: #28a745; margin-top: 20px; margin-bottom: 10px;">Building Innovative Applications:</h3>
+    <p style="margin-bottom: 15px;">AI opens doors to creating entirely new categories of applications that were previously unimaginable. From intelligent assistants and personalized experiences to predictive analytics and computer vision systems, the possibilities are vast and exciting.</p>
+
+    <h3 style="color: #28a745; margin-top: 20px; margin-bottom: 10px;">Solving Complex Problems:</h3>
+    <p style="margin-bottom: 15px;">AI provides powerful tools for tackling intricate challenges in various domains, such as healthcare, finance, and environmental sustainability. Developers with AI skills can contribute to creating solutions with significant real-world impact.</p>
+
+    <h3 style="color: #28a745; margin-top: 20px; margin-bottom: 10px;">New Specializations and Roles:</h3>
+    <p style="margin-bottom: 15px;">The rise of AI is creating new and specialized roles for developers, such as Machine Learning Engineers, AI Architects, Data Engineers, and Prompt Engineers. This offers opportunities for career growth and specialization in high-demand areas.</p>
+
+    <h3 style="color: #28a745; margin-top: 20px; margin-bottom: 10px;">Improved User Experiences:</h3>
+    <p style="margin-bottom: 15px;">AI can be leveraged to create more intelligent, personalized, and intuitive user experiences. Developers can use AI to implement features like natural language processing, recommendation systems, and intelligent search.</p>
+
+    <h3 style="color: #28a745; margin-top: 20px; margin-bottom: 10px;">Democratization of AI:</h3>
+    <p style="margin-bottom: 15px;">Cloud-based AI platforms and pre-trained models are making AI more accessible to developers without requiring deep expertise in machine learning theory. This lowers the barrier to entry and allows more developers to experiment with and integrate AI into their projects.</p>
+
+    <h3 style="color: #28a745; margin-top: 20px; margin-bottom: 10px;">Increased Demand and Higher Salaries:</h3>
+    <p style="margin-bottom: 15px;">The demand for developers with AI skills is significantly outpacing the supply, leading to increased job opportunities and higher salary potential. Investing in AI-related skills can be a strategic career move.</p>
+
+    <h2 style="color: #007bff; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px;">Navigating the Shift: Embracing the Opportunity:</h2>
+    <p style="margin-bottom: 15px;">The key for developers is to view AI not as a replacement, but as a powerful new set of tools and a catalyst for innovation. Here's how developers can navigate this shift and capitalize on the opportunities:</p>
+
+    <h3 style="color: #007bff; margin-top: 20px; margin-bottom: 10px;">Continuous Learning:</h3>
+    <p style="margin-bottom: 15px;">Embrace lifelong learning and dedicate time to understanding the fundamentals of AI and machine learning. Explore online courses, tutorials, and certifications.</p>
+
+    <h3 style="color: #007bff; margin-top: 20px; margin-bottom: 10px;">Focus on Higher-Level Skills:</h3>
+    <p style="margin-bottom: 15px;">Concentrate on developing skills that are less likely to be automated, such as critical thinking, problem-solving, creativity, communication, and collaboration.</p>
+
+    <h3 style="color: #007bff; margin-top: 20px; margin-bottom: 10px;">Experiment with AI Tools:</h3>
+    <p style="margin-bottom: 15px;">Get hands-on experience with various AI development platforms, libraries, and tools. Explore how they can be integrated into your existing workflows.</p>
+
+    <h3 style="color: #007bff; margin-top: 20px; margin-bottom: 10px;">Identify AI Use Cases:</h3>
+    <p style="margin-bottom: 15px;">Look for opportunities to apply AI in your current projects or explore new project ideas that leverage AI capabilities.</p>
+
+    <h3 style="color: #007bff; margin-top: 20px; margin-bottom: 10px;">Specialize in a Niche:</h3>
+    <p style="margin-bottom: 15px;">Consider specializing in a specific area of AI development, such as natural language processing, computer vision, or a particular industry application.</p>
+
+    <h3 style="color: #007bff; margin-top: 20px; margin-bottom: 10px;">Collaborate and Share Knowledge:</h3>
+    <p style="margin-bottom: 15px;">Engage with the developer community, share your learnings, and collaborate on AI-related projects.</p>
+
+    <div style="margin-top: 30px; padding: 15px; background-color: #f8f9fa; border: 1px solid #ced4da; border-radius: 5px;">
+        <p style="margin-bottom: 15px;"><strong style="color: #007bff;">Conclusion:</strong> The advent of AI presents both challenges and significant opportunities for developers. While the fear of automation and the need to acquire new skills are valid concerns, the potential for innovation, enhanced productivity, and new career paths is immense. By embracing a mindset of continuous learning, focusing on higher-level skills, and actively exploring the possibilities of AI, developers can position themselves at the forefront of this transformative technological wave and leverage it to build the next generation of intelligent applications. The future of development is intertwined with AI, and those who adapt and embrace this new frontier will undoubtedly reap the rewards.</p>
+    </div>
+
+    </div>
+     <button onclick="document.getElementById('introPopup3').style.display='none'">Let’s Go 🚀</button>
+  </div>
+
+  </div>
+</div>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Behind the Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Career Timeline</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Santosh Kushwaha</h5>
+                        <div class="brand-subtitle"> Full Stack Developer | Cloud Expert</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Insight Hub</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Drop a Line</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Full Stack Developer / Cloud Expert Located In Our Lovely Earth</h5>
+                <p class="mt-20">A Software Specialist who thrives on turning tough tech puzzles into smooth, scalable realities. From SAP and Oracle to Dynamics, I’m the bridge between ideas and execution.</p>
+               <button class="open-btn" onclick="document.getElementById('introPopup').style.display='flex'">Show My Intro ✨</button>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span><i class="fas fa-birthday-cake fa-1x" style="color:#FF6666;"></i></span> : 09/13/XXXX</li>
+                    <li><span><i class="fas fa-envelope fa-1x" style="color:#FF6666;" title="Email"></i>
+</span> : santosh.kushwaha53@gmail.com</li>
+                    <li><span><i class="fas fa-phone fa-1x" style="color:#FF6666;" title="Phone"></i>
+</span> : + (60) 1117981258</li>
+                    <li><span><i class="fas fa-comments fa-1x" style="color:#FF6666;" title="Microsoft Teams Chat"></i>
+</span> : manav.kushwaha45@hotmail.com </li>
+                    <li><span><i class="fas fa-map-marker-alt fa-1x" style="color:#FF6666;" title="Address"></i>
+</span> :  Kuala Lumpur,Malaysia</li>
+                </ul>
+                <ul class="social-icons pt-3">
+               
+                
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/manavguru/"> <i class="fab fa-linkedin fa-2x" style="color:#FF6666;" title="LinkedIn"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/santoshkushwaha53"><i class="fab fa-github fa-2x" style="color:#FF6666;" title="GitHub"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://x.com/manavguru2000"><i class="fab fa-x-twitter fa-2x" style="color: black;" title="Twitter (X)"></i></a></li>
+                    
+                </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="fas fa-project-diagram fa-2x" style="color:#FF6666;"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Product Development</h6>
+                        <p class="subtitle"> Building digital products that solve real problems.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><div style="display: flex; gap: 20px; align-items: center;">
+  <i class="fas fa-cloud fa-2x" style="color:#FF6666;" title="Cloud"></i>
+</div></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Cloud Expert</h6>
+                        <p class="subtitle">Optimizing infrastructure, empowering innovation – in the cloud.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="fas fa-brain fa-2x" style="color: #FF6666;"></i>
+</div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>AI Expert</h6>
+                        <p class="subtitle">Turning complex problems into AI-powered solutions.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">Career Timeline</span> </h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card"><div class="card-header has-icon">
+                            <i class="fas fa-briefcase fa-2x"  style="color:#FF6666;"></i>
+
+                        </div>    
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Work Adventures</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2016 - Present</h6>
+                            <P>Packaged App Development Specialist @Accenture</P>
+                            <P class="subtitle">As a Packaged Application Development Specialist, I specialize in designing, developing, and implementing enterprise-grade software solutions tailored to client needs using commercial off-the-shelf (COTS) platforms. I collaborate with cross-functional teams to customize, configure, and extend packaged applications to align with business processes and objectives. My role involves requirement analysis, system integration, technical design, hands-on development, and support for deployment activities. I focus on delivering high-quality, scalable, and maintainable solutions that drive operational efficiency and meet client expectations.ß.</P>
+                            <hr>
+                            <h6 class="title text-danger">2015 - 2016</h6>
+                            <P>Senior Program Analyst @ Binary Semantics Ltd.</P>
+                            <P class="subtitle">Designed and implemented secure, scalable application components while ensuring optimal performance through close team collaboration. Played a key role in testing, defect resolution, and thorough documentation to support smooth and maintainable software delivery..</P>
+                            <hr>
+                            <h6 class="title text-danger">2014 - 2015</h6>
+                            <P>Software Engineer @ Chetu India Pvt Ltd.</P>
+                            <P class="subtitle">Contributed to full-cycle software development by analyzing business requirements, developing and documenting modules, and ensuring optimal performance through thorough debugging and testing. Supported intranet initiatives by maintaining and updating internal web content, led website decommissioning efforts, and ensured the continued functionality of existing web platforms. Collaborated with UI/UX and backend teams to integrate responsive front-end templates with dynamic server-side systems..</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card"><div class="card-header has-icon">
+                            <i class="fas fa-scroll fa-2x" style="color:#FF6666;"></i>
+
+                        </div>                       <div class="card-header">
+                            <div class="mt-2">
+
+                                <h4>Certifications</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">Microsoft Certified: Azure AI Fundamentals</h6>
+                            <P>Microsoft </p>
+                            <p>Issued Nov 2024</p>
+                             <p><a href="https://learn.microsoft.com/api/credentials/share/en-us/KumarKushwahaSantosh-7841/73233A1AE7D5BE8E?sharingId=B3F41AACE9320F1F" target="_blank">
+                            Credential ID 73233A1AE7D5BE8E</a></P>
+                                                        <hr>
+                            <h6 class="title text-danger">Microsoft Certified: Azure Developer Associate</h6>
+                            <P>Microsoft </p>
+                            <p>Issued June 2024</p>
+                             <p><a href="https://learn.microsoft.com/api/credentials/share/en-us/KumarKushwahaSantosh-7841/8D271A74FF33BF78?sharingId" target="_blank">
+                            Credential ID 8D271A74FF33BF78</a></P>
+                                                        <hr>
+                                                         <h6 class="title text-danger">Microsoft Certified: Azure Fundamentals</h6>
+                            <P>Microsoft </p>
+                            <p>Issued August 2022</p>
+                             <p><a href="https://learn.microsoft.com/en-us/users/kumarkushwahasantosh-7841/transcript/v20pqa0l16qlywy" target="_blank">
+                            Credential ID 13902948</a></P>
+                                                                                  
+                        </div>
+                    </div>
+                     <div class="card"><div class="card-header has-icon">
+                            <i class="fas fa-book fa-2x"  style="color:#FF6666;"></i>
+
+                        </div>   
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Educational Trail</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2008 - 2011</h6>
+                            <h5>Master Of Computer Application</h5>
+                            <P class="subtitle">Uttar Pradesh Techinical University, Lucknow, Uttar Pradesh, India</P>
+                            <hr>
+                            <h6 class="title text-danger">2005 - 2008</h6>
+                            <h5>Batchlor of Arts</h5>
+                            <P class="subtitle">Chatrapati Sahu Ji Maharaj University, Kanpur,Uttar Pradesh, India</P>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card"><div class="card-header has-icon">
+                            <i class="fas fa-tools fa-2x"  style="color:#FF6666;"></i>
+
+                        </div>   
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">My Craft</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h5>Programming and scripting languages</h5>
+                           <p>
+                           C#, JavaScript, TypeScript, T-SQL</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Web technologies</h5><p> .NET Core, MVC5, WebApi, Angular, jQuery, HTML, CSS, Unit testing: NUnit</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Cloud</h5>
+                            <p>Azure and AWS serverless</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Architectural Patterns</h5>
+                            <p>N-Tier / 3-Tier, DDD, TDD, Microservices</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Frameworks, tools, and libraries</h5><p> EF Core, Azure PaaS, VS 2017-22, VS Code, GIT,IONIC
+                            </p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>System Integration</h5><p> SSIS,XML,ETL,EDI,API
+                            </p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Databases </h5><p>SQL Server 2014, 16,19
+                            </p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Project management tools </h5><p>Azure DevOps, Bitbucket, Jira
+                            </p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card"><div class="card-header has-icon">
+                            <i class="fas fa-comment-dots fa-2x"  style="color:#FF6666;"></i>
+
+                        </div>   
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>Hindi</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Sanskrit</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">5000</h1>
+                            <p class="text-light mb-1">Hours Worked</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">3</h1>
+                            <p class="text-light mb-1">Certifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-book icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">100+ </h1>
+                            
+                            <p class="text-light mb-1">Tech, history, fiction — I explore it all(and Half-Finished 😅)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">2k</h1>
+                            <p class="text-light mb-1">Coffee Drinked</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Expertise Zones</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                                                         <i class="fas fa-cogs fa-3x" style="color: #FF6666;"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Product development</h5>
+                            <P class="subtitle">I have extensive experience in developing and delivering robust product applications, including Distributor Management Systems and ERP solutions. My expertise spans the entire product lifecycle — from gathering requirements and designing solutions to development, testing, and deployment. I specialize in creating scalable, high-performance systems tailored to client needs. By leveraging cutting-edge technologies, I ensure seamless integration with existing platforms, optimize business processes, and improve overall operational efficiency. </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                           <i class="fas fa-plane fa-2x" style="color: #FF6666;"></i>
+
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Travel & Hospitality Solutions</h5>
+                            <P class="subtitle">With deep expertise in flight and hotel booking systems, I design and implement seamless, user-friendly solutions that cater to the evolving needs of the travel and hospitality industry. From real-time availability and pricing integration to booking management and payment gateways, I ensure smooth and efficient booking experiences for both businesses and end users. My experience spans the development of robust, scalable platforms that  optimize booking workflows. I also prioritize integration with third-party systems to enhance functionality  for all booking-related needs.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                           <i class="fas fa-database fa-2x" style="color:#FF6666;"></i>                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Data Transformation & Reporting Solutions</h5>
+                            <P class="subtitle">With extensive experience in data transformation and reporting, I specialize in transforming complex data into meaningful insights that drive decision-making and business success. From ETL (Extract, Transform, Load) processes to creating dynamic, interactive reports, I build scalable solutions that provide accurate, actionable data at your fingertips. Additionally, I focus on data visualization and real-time reporting, enabling stakeholders to make informed decisions quickly and effectively.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="fas fa-network-wired fa-2x" style="color: #FF6666;"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Digital Ecosystem</h5>
+                            <P class="subtitle">With extensive experience in Internet and Intranet solutions development, I specialize in building robust, scalable networks that connect teams, enhance collaboration, and streamline internal communication. Whether for external web solutions or secure intranet platforms, I design and implement systems that ensure high performance, security, and user-centric accessibility, while also optimizing network efficiency and reducing downtime.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="fas fa-cloud fa-2x" style="color: #FF6666;"></i>
+
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Cloud Governance</h5>
+                            <P class="subtitle">With extensive experience in cloud management, I specialize in designing, deploying, and optimizing cloud infrastructure that ensures scalability, security, and cost efficiency. Whether it's for public, private, or hybrid cloud environments, I manage cloud services to maximize uptime and minimize risk, empowering businesses to harness the full potential of cloud technology.
+
+Expertise in cloud platform management using AWS and Azure infrastructure.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                           <i class="fas fa-mobile-alt fa-2x" style="color: #FF6666;"></i>
+                   </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">App Solutions</h5>
+                            <P class="subtitle">With extensive experience in mobile application development, I design and build innovative, user-centric apps that deliver seamless experiences across iOS and Android platforms. Whether it’s for consumer-facing apps or enterprise solutions, I focus on creating high-performance, intuitive applications that scale with your business needs. I also ensure smooth integration with backend systems and APIs, enabling real-time data flow and enhanced app functionality.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
+            <button class="btn bg-primary w-lg" >Hire me</button>
+        </div>
+    </section>
+
+       <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5">Insight Hub</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Staying Ahead in Tech: A Developer’s Guide to Lifelong Learning</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>                        </p>
+                        
+                        <p>In the fast-paced world of technology, yesterday’s cutting-edge becomes today’s baseline. For developers, staying relevant isn’t a one-time milestone — it’s a continuous journey. Lifelong learning is no longer optional; it's the key to staying ahead, remaining adaptable, and delivering value in every project.ß</p>
+                         <button class="open-btn" onclick="document.getElementById('introPopup1').style.display='flex'">Read More ✨</button>
+
+                                           </div>
+                </div><!-- end of blog wrapper -->
+
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Coding Through the Chaos: Maintaining a Healthy Life as a Busy Developer</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                                                    </p>
+                        
+                        <p>The glow of the monitor, the satisfying click of the keys, the elegant logic unfurling in your code – these are the hallmarks of a developer's world. But often, this world comes with a silent companion: long hours. While the dedication to your craft is admirable, consistently burning the midnight oil can take a toll on your physical and mental well-being.</p>
+
+                        <button class="open-btn" onclick="document.getElementById('introPopup2').style.display='flex'">Read More ✨</button>
+                    </div>
+                </div><!-- end of blog wrapper -->
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">AI: The Developer's New Frontier - Challenge or Opportunity?</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                        </p>
+                        
+                        <p> The rise of Artificial Intelligence (AI) has sparked a whirlwind of discussions across industries, and the development world is no exception. For developers, the emergence of sophisticated AI tools and the increasing demand for AI-powered applications present a pivotal moment. Is this a challenging disruption or a fertile ground of opportunity? The answer, like most things in the tech landscape, is nuanced and depends heavily on perspective and proactivity.</p>
+
+                        <button class="open-btn" onclick="document.getElementById('introPopup3').style.display='flex'">Read More ✨</button>
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+            </div>
+        </div>
+    </section>
+
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Drop Me a Line</h4>
+                       <form action="" id="emailForm">
+    <div class="form-group">
+        <input class="form-control" type="text" placeholder="Name *" name="from_name" required>
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="email" placeholder="Email *" name="from_email" required>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" placeholder="Message *" rows="7" name="message" required></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="form-control btn btn-primary">Send Message</button>
+    </div>
+</form>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+60-1117981258</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">xxx-Kuala Lumpur,Malaysia</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">santosh.kushwaha53@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/Itconsultantguru/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://x.com/manavguru2000"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/manavguru/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/santoshkushwaha53"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="http://devcrud.com" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards"></span></a> 
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+   (function(){
+  emailjs.init("fHAAg_SF4gvesNfdD"); // Replace with your actual Public Key
+})();
+
+document.getElementById('emailForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Get the email value and validate it
+  const email = this.from_email.value;
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  
+  if (!email.match(emailPattern)) {
+    alert("Please enter a valid email address.");
+    return; // Stop the form submission if the email is invalid
+  }
+
+  // Send the email using EmailJS
+  emailjs.sendForm('service_hyubvzp', 'template_snnz3hm', this)
+    .then(function(response) {
+      alert('Email sent successfully!');
+      
+      // Clear the form fields after successful submission
+      document.getElementById('emailForm').reset();
+    }, function(error) {
+      alert('Failed to send email: ' + JSON.stringify(error));
+    });
+});
+
+  </script>
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+</html>
